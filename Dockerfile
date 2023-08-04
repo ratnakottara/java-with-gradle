@@ -12,7 +12,7 @@ COPY src /usr/app/src
 RUN ./gradlew build
 
 # Copy the JAR file into the container
-COPY build/libs/my-app-1.0-SNAPSHOT.jar /usr/app/my-app-1.0-SNAPSHOT.jar
+COPY build/libs/my-app-1.0-SNAPSHOT.jar /usr/app/build/libs/my-app-1.0-SNAPSHOT.jar
 
 # Set the entry point to run the Java application
 ENTRYPOINT ["java", "-jar", "/usr/app/my-app-1.0-SNAPSHOT.jar"]
