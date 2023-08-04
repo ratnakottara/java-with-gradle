@@ -3,7 +3,7 @@ FROM openjdk:11
 
 # Step 2: Set the working directory inside the container
 WORKDIR /usr/app
-EXPOSE 8080
+
 # Step 3: Copy the Gradle build files
 COPY build.gradle settings.gradle gradlew /usr/app/
 COPY gradle /usr/app/gradle
