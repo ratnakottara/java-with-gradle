@@ -13,4 +13,4 @@ COPY src /usr/app/src
 RUN ./gradlew build
 
 # Step 5: Set the entry point to run the Java application
-ENTRYPOINT ["java", "-jar", "./build/libs/my-app-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "./build/libs/my-app-1.0-SNAPSHOT.jar"]
